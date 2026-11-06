@@ -1,7 +1,7 @@
 # Reseapp
 
 
-#Detta är Reseapp som visar användare fakta om länderna 
+#Detta är Reseapp som visar för användare fakta om länderna 
 
 # Framework
 #Denna app är byggd med React.js och stylad med hjälp av Tailwind klasser.
