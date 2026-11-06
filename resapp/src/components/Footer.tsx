@@ -7,12 +7,7 @@ const Footer: React.FC = () => {
         <p className="text-sm mb-2 md:mb-0 text-center md:text-left"></p>
 
         <div className="flex flex-col items-center space-y-2 md:flex-row md:space-y-0 md:space-x-4">
-          <a
-            href="/"
-            className="text-sm text-yellow-400 hover:text-yellow-200 transition duration-200"
-          >
-          Min Reseapp
-          </a>
+         
         </div>
       </div>
     </footer>
