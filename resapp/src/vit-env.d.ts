@@ -1,1 +1,1 @@
-<reference type= "vite/celint"/>
+/// <reference types= "vite/celint"/>
