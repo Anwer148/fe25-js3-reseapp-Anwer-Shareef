@@ -1,5 +1,11 @@
 
+import React from "react";
+import { useNavigate } from "react-router-dom";
+import type { CountryData } from "../types/types";
 
+interface CountryCardProps {
+  country: CountryData;
+}
 
 
 
