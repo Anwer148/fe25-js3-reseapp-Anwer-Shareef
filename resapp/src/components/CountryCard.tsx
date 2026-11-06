@@ -8,10 +8,6 @@ interface CountryCardProps {
 }
 
 
-
-
-
-
 const CountryCard: React.FC<CountryCardProps> = ({ country }) => {
   const navigate = useNavigate();
 
