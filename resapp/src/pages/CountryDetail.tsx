@@ -7,6 +7,12 @@ import type {
   CountryImage,
 } from "../types/types";
 
+const placeholderImages: CountryImage[] = [
+  { url: "https://picsum.photos/400/300?random=1", alt: "Bild 1" },
+  { url: "https://picsum.photos/400/300?random=2", alt: "Bild 2" },
+  { url: "https://picsum.photos/400/300?random=3", alt: "Bild 3" },
+];
+
 
  useEffect(() => {
     const fetchCountry = async () => {
