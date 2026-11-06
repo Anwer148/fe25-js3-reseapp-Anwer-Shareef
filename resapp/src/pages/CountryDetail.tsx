@@ -12,7 +12,26 @@ const placeholderImages: CountryImage[] = [
   { url: "https://picsum.photos/400/300?random=2", alt: "Bild 2" },
   { url: "https://picsum.photos/400/300?random=3", alt: "Bild 3" },
 ];
+const API_KEY = "rc_live_612932e0fa354223b97908bebe644496";
 
+const CountryDetail: React.FC = () => {
+  //hämtar code från URL
+  const { code } = useParams<{ code: string }>();
+
+  const navigate = useNavigate();
+
+  //data om länder
+  const [country, setCountry] = useState<CountryData | null>(null);
+  //data om väder
+  const [weather, setWeather] = useState<WeatherData | null>(null);
+  //data från wiki
+  const [wiki, setWiki] = useState<WikiData | null>(null);
+  //laddningshjul under tiden hämta svar
+  const [loading, setLoading] = useState(true);
+  //error check om en fetch misslyckas
+  const [error, setError] = useState("");
+  // state för bilder
+  const [images, setImages] = useState<CountryImage[]>([]);
 
  useEffect(() => {
     const fetchCountry = async () => {
